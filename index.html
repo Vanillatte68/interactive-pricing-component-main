@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+      <section>
+        <div class="pricing-label">
+          <p class="views-label">
+            <b><span id="views">10K</span> Pageviews</b>
+          </p>
+          <p class="price-desktop">
+            <span class="price">$8.00</span
+            ><span class="price-label">/ month</span>
+          </p>
+        </div>
+        <!-- slider -->
+        <input
+          id="slider"
+          type="range"
+          min="0"
+          max="100"
+          step="25"
+          list="priceMark"
+        />
+        <datalist id="priceMark">
+          <option value="0"></option>
+          <option value="25"></option>
+          <option value="50"></option>
+          <option value="75"></option>
+          <option value="100"></option>
+        </datalist>
+        <p class="price-mobile">
+          <span class="price">$8.00</span
+          ><span class="price-label">/ month</span>
+        </p>
+        <!-- slider -->
+        <div class="billing-label">
+          <span>Monthly Billing</span>
+          <!-- toggle pricing -->
+          <input type="checkbox" id="switch" />
+          <label class="toggle-label" for="switch"></label>
+          <!-- toggle pricing -->
+          <span>Yearly Billing</span> <span class="discount">25% discount</span
+          ><span class="discount-mobile">-25%</span>
+        </div>
+        <div class="plans-contain">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <button>Start my trial</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >
+      | Coded by
+      <a href="https://www.frontendmentor.io/profile/Vanillatte68">Roselin Y</a
+      >.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
